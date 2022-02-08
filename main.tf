@@ -24,6 +24,9 @@ provider "azurerm" {
   # Configure a specific Subscription ID (optional)
   subscription_id = "e9d4ef65-1711-4af5-8559-bf605d1f9e5e"
 }
+
+/*변경사항 발생*/
+
 /*
 resource "azurerm_resource_group" "rg01" {
   name     = var.resourcegroup
