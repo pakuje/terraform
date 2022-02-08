@@ -26,6 +26,7 @@ provider "azurerm" {
 }
 
 /*변경사항 발생*/
+/*변경사항 발생2*/
 
 /*
 resource "azurerm_resource_group" "rg01" {
