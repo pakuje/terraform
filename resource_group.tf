@@ -13,4 +13,6 @@ resource "azurerm_resource_group" "rg03" {
   location = var.location
 }
 #테스트 
+
+
 */
