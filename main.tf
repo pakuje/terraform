@@ -4,9 +4,11 @@ terraform {
 
 provider "azurerm" {
   features {}
-
-  # Configure a specific Subscription ID (optional)
-  subscription_id = "e9d4ef65-1711-4af5-8559-bf605d1f9e5e"
+    subscription_id = "e9d4ef65-1711-4af5-8559-bf605d1f9e5e"
+  tenant_id = "d63d0b02-54e5-46ed-b8ef-1d4e001d14ff"
+  client_id = "656d57ce-1f7a-4f92-8dc6-20e8e61552e0"
+  client_secret = "jFZ7Q~dwebpqeBtR31IgKKebhNBUevSQeY6Ih"
+  
 }
 /*
   backend "azurerm" {
