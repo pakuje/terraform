@@ -16,12 +16,12 @@ provider "azurerm" {
 
 # create resource group
 
-resource "azurerm_resource_group" "rg" {
+resource "azurerm_resource_group" "rg1" {
   name     = "rg-tf-01"
   location = "koreacentral"
 }
 
-resource "azurerm_virtual_network" "vnet" {
+resource "azurerm_virtual_network" "vnet1" {
   name                = "vnet-tf-01"
   address_space       = ["10.0.0.0/16"]
   location            = "koreacentral"
@@ -35,3 +35,10 @@ resource "azurerm_subnet" "sub1" {
   virtual_network_name = azurerm_virtual_network.vnet
   resource_group_name = azurerm_resource_group.rg
 }
+
+resource "azurerm_virtual_machine" "vm1" {
+  name = "vm-tf-01"
+  location = "koreacentral"
+  resource_group_name = azurerm_resource_group.rg.name  
+}
+
